@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="146" height="317" viewBox="0 0 146 317">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_297" data-name="Rectangle 297" width="146" height="317" transform="translate(1774 3744)" fill="#fff" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#e2ab44"/>
+      <stop offset="1" stop-color="#fee185"/>
+    </linearGradient>
+  </defs>
+  <g id="Mask_Group_14" data-name="Mask Group 14" transform="translate(-1774 -3744)" clip-path="url(#clip-path)">
+    <g id="Group_5067" data-name="Group 5067" transform="translate(0 -455.723)">
+      <path id="Path_107" data-name="Path 107" d="M13.339,25.373,17.59,17.2l9.089-1.517L20.218,9.113,21.584,0,13.34,4.115,5.1,0,6.462,9.113,0,15.682,9.089,17.2Z" transform="matrix(-0.914, -0.407, 0.407, -0.914, 1798.373, 4306.861)" fill="url(#linear-gradient)"/>
+      <path id="Subtraction_33" data-name="Subtraction 33" d="M16084,324a163.188,163.188,0,0,1-32.648-3.291,161.12,161.12,0,0,1-57.928-24.376,162.478,162.478,0,0,1-58.693-71.275,161.219,161.219,0,0,1-9.439-30.409,163.592,163.592,0,0,1,0-65.3,161.106,161.106,0,0,1,24.376-57.927,162.465,162.465,0,0,1,71.275-58.693,161.159,161.159,0,0,1,30.409-9.439,163.58,163.58,0,0,1,65.3,0,161.122,161.122,0,0,1,57.928,24.376,162.478,162.478,0,0,1,58.693,71.275,161.225,161.225,0,0,1,9.439,30.409,163.592,163.592,0,0,1,0,65.3,161.106,161.106,0,0,1-24.376,57.927,162.467,162.467,0,0,1-71.275,58.693,161.159,161.159,0,0,1-30.409,9.44A163.188,163.188,0,0,1,16084,324Zm0-284.707A122.71,122.71,0,1,0,16206.709,162,122.849,122.849,0,0,0,16084,39.292Z" transform="translate(-14127.652 4199.861)" opacity="0.21" fill="url(#linear-gradient)"/>
+      <path id="Path_108" data-name="Path 108" d="M19.989,0l6.37,12.251,13.62,2.273L30.3,24.367l2.047,13.655L19.989,31.855,7.635,38.023,9.683,24.367,0,14.523l13.62-2.273Z" transform="matrix(-0.914, 0.407, -0.407, -0.914, 1898.066, 4273.585)" fill="#019cde"/>
+      <circle id="Ellipse_38" data-name="Ellipse 38" cx="11" cy="11" r="11" transform="translate(1826.347 4459.861)" fill="#019cde"/>
+      <circle id="Ellipse_39" data-name="Ellipse 39" cx="8.332" cy="8.332" r="8.332" transform="translate(1829.015 4462.529)" fill="#019cde"/>
+    </g>
+  </g>
+</svg>
