@@ -384,7 +384,7 @@ body {
 
 .banner .text {
   position: absolute;
-  top: 47%;
+  top: 45%;
   transform: translateY(-50%);
   right: 13vw;
   width: 33.33%;
@@ -2177,6 +2177,14 @@ body {
 
 /* #Category Page Product Slider
 ================================================== */
+.category-page .journey-slider .tabs {
+  margin-bottom: 0;
+}
+
+.category-page .journey-slider .swiper-wrapper {
+  flex-wrap: wrap;
+}
+
 @media (min-width: 1024px) {
   .category-page .product-slider {
     margin-bottom: 6.77vw;
@@ -2195,10 +2203,14 @@ body {
   .category-page .product-card {
     box-shadow: 0 3px 22px rgb(0 0 0 / 5%);
   }
+
+  .category-page .journey-slider .swiper-slide {
+    margin-bottom: 2.34vw;
+  }
 }
 
 @media (max-width: 1023.98px) {
-  .product-slider {
+  .category-page .product-slider {
     min-height: 0;
     padding-bottom: 17.33vw;
   }
@@ -2206,5 +2218,17 @@ body {
   .category-page .product-slider .container {
     position: static;
     transform: none;
+  }
+
+  .category-page .journey-slider {
+    padding-bottom: 0;
+  }
+
+  .category-page .journey-slider .swiper-wrapper {
+    justify-content: center;
+  }
+
+  .category-page .journey-slider .swiper-slide {
+    margin-bottom: 8vw;
   }
 }
