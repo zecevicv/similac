@@ -2177,20 +2177,34 @@ body {
 
 /* #Category Page Product Slider
 ================================================== */
-.category-page .product-slider {
-  margin-bottom: 6.77vw;
+@media (min-width: 1024px) {
+  .category-page .product-slider {
+    margin-bottom: 6.77vw;
+  }
+  
+  .category-page .product-slider .container {
+    width: 73.9%;
+    position: static;
+    transform: none;
+  }
+  
+  .category-page .product-slider .heading {
+    margin-bottom: 3.125vw;
+  }
+  
+  .category-page .product-card {
+    box-shadow: 0 3px 22px rgb(0 0 0 / 5%);
+  }
 }
 
-.category-page .product-slider .container {
-  width: 73.9%;
-  position: static;
-  transform: none;
-}
+@media (max-width: 1023.98px) {
+  .product-slider {
+    min-height: 0;
+    padding-bottom: 17.33vw;
+  }
 
-.category-page .product-slider .heading {
-  margin-bottom: 3.125vw;
-}
-
-.category-page .product-card {
-  box-shadow: 0 3px 22px rgb(0 0 0 / 5%);
+  .category-page .product-slider .container {
+    position: static;
+    transform: none;
+  }
 }
