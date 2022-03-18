@@ -136,7 +136,18 @@ if (document.querySelector('.journey-slider .tab-content .swiper')) {
 
 /* #Category Slider
   ======================================================= */
-if (document.querySelector('.category-slider .tab-content .swiper')) {
+if (document.querySelector('.category-slider')) {
+  var observer = new IntersectionObserver(function(entries) {
+    // no intersection with screen
+    if(entries[0].intersectionRatio === 0)
+      document.querySelector(".category-slider .tab-navigation").classList.add("sticky");
+    // fully intersects with screen
+    else if(entries[0].intersectionRatio === 1)
+      document.querySelector(".category-slider .tab-navigation").classList.remove("sticky");
+  }, { threshold: [0,1] });
+  
+  observer.observe(document.querySelector('.category-slider .sticky-trigger'));
+
   if (document.querySelector('.category-slider .tab-navigation .swiper')) {
     new Swiper(".category-slider .tab-navigation .swiper", {
       breakpoints: {

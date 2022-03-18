@@ -1997,6 +1997,31 @@ body {
   text-align: center;
 }
 
+.category-slider .sticky-trigger {
+  height: 1px;
+}
+
+.category-slider .tab-navigation {
+  position: sticky;
+  top: 7.55vw;
+  left: 0;
+  z-index: 100;
+  background-color: white;
+  transition: all .4s ease;
+}
+
+.category-slider .tab-navigation.sticky {
+  box-shadow: 0 2px 6px rgba(0, 0, 0, .1);
+}
+
+.category-slider .tab-navigation.sticky .tab-navigation-wrap {
+  box-shadow: none;
+}
+
+.category-slider .tab-navigation:not(:stuck) { 
+  background-color: white;
+ }
+
 .category-slider .tab-navigation-wrap {
   border-radius: 500px;
   background-color: white;
@@ -2009,10 +2034,7 @@ body {
   align-items: center;
   padding: 0 .78vw;
   box-shadow: 0 2px 6px rgba(0, 0, 0, .1);
-
-  position: sticky;
-  top: 50%;
-  left: 0;
+  transition: all .4s ease;
 }
 
 .category-slider .tab-navigation-wrap .swiper {
@@ -2089,7 +2111,6 @@ body {
 @media (max-width: 1023.98px) {
   .category-slider {
     padding: 0 0 18vw 0;
-    overflow: hidden;
   }
   
   .category-slider h2 {
@@ -2105,6 +2126,10 @@ body {
 
   .category-slider .swiper-pagination {
     bottom: 0;
+  }
+
+  .category-slider .tab-navigation {
+    top: 25.33vw;
   }
 
   .category-slider .tab-navigation-wrap {
