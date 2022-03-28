@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="63" height="63" viewBox="0 0 63 63">
+  <defs>
+    <filter id="Ellipse_1749" x="0" y="0" width="63" height="63" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-color="#1d3bff" flood-opacity="0.102"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Group_8432" data-name="Group 8432" transform="translate(-451 -767)">
+    <g transform="matrix(1, 0, 0, 1, 451, 767)" filter="url(#Ellipse_1749)">
+      <circle id="Ellipse_1749-2" data-name="Ellipse 1749" cx="22.5" cy="22.5" r="22.5" transform="translate(9 6)" fill="#fff"/>
+    </g>
+    <g id="Group_4356" data-name="Group 4356" transform="translate(470 783)">
+      <path id="Path_322" data-name="Path 322" d="M21.686,6.052H19.165V2.522A2.525,2.525,0,0,0,16.643,0H7.565A2.525,2.525,0,0,0,5.043,2.522v3.53H2.522A2.525,2.525,0,0,0,0,8.574v7.061a2.525,2.525,0,0,0,2.522,2.522H5.043v3.53a2.525,2.525,0,0,0,2.522,2.522h9.078a2.525,2.525,0,0,0,2.522-2.522v-3.53h2.522a2.525,2.525,0,0,0,2.522-2.522V8.574A2.525,2.525,0,0,0,21.686,6.052ZM6.052,2.522A1.515,1.515,0,0,1,7.565,1.009h9.078a1.515,1.515,0,0,1,1.513,1.513v3.53H6.052Zm12.1,19.165A1.515,1.515,0,0,1,16.643,23.2H7.565a1.515,1.515,0,0,1-1.513-1.513V14.121h12.1ZM23.2,15.634a1.515,1.515,0,0,1-1.513,1.513H19.165v-3.53a.5.5,0,0,0-.5-.5H5.548a.5.5,0,0,0-.5.5v3.53H2.522a1.515,1.515,0,0,1-1.513-1.513V8.574A1.515,1.515,0,0,1,2.522,7.061H21.686A1.515,1.515,0,0,1,23.2,8.574Z" fill="#d0990f"/>
+      <path id="Path_323" data-name="Path 323" d="M177.223,426.667h-6.052a.5.5,0,0,0,0,1.009h6.052a.5.5,0,1,0,0-1.009Z" transform="translate(-162.598 -406.494)" fill="#d0990f"/>
+      <path id="Path_324" data-name="Path 324" d="M177.223,384h-6.052a.5.5,0,0,0,0,1.009h6.052a.5.5,0,1,0,0-1.009Z" transform="translate(-162.598 -365.844)" fill="#d0990f"/>
+      <path id="Path_325" data-name="Path 325" d="M171.171,342.342h2.017a.5.5,0,0,0,0-1.009h-2.017a.5.5,0,0,0,0,1.009Z" transform="translate(-162.598 -325.194)" fill="#d0990f"/>
+    </g>
+  </g>
+</svg>
