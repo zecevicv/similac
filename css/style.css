@@ -2610,3 +2610,38 @@ body {
     margin-right: 1.13vw;
   }
 }
+
+/* #Error
+================================================== */
+.error {
+  padding: 3.38vw 0 6.77vw 0;
+  text-align: center;
+}
+
+.error .img img {
+  margin: 0 auto;
+  margin-bottom: .5vw;
+  width: 45vw;
+}
+
+.error h1 {
+  margin-bottom: 2vw;
+  line-height: 1.4;
+}
+
+@media (max-width: 1023.98px) {
+  .error {
+    padding: 7.33vw 0 12vw 0;
+  }
+  
+  .error .img img {
+    margin: 0 auto;
+    margin-bottom: 2.66vw;
+    width: 90%;
+  }
+  
+  .error h1 {
+    margin-bottom: 7.33vw;
+    line-height: 1.15;
+  }
+}
