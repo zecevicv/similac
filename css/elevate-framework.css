@@ -247,6 +247,10 @@ button {
   text-align: right!important;
 }
 
+.text-underline {
+  text-decoration: underline;
+}
+
 .ratio-16-9 {
   position: relative;
   padding-top: 56.25%;
