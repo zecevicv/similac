@@ -33,6 +33,18 @@ body {
   color: #019CDE;
 }
 
+.text-pink {
+  color: #FF008F;
+}
+
+.text-purple {
+  color: #6D2281;
+}
+
+.text-green {
+  color: #007D6B;
+}
+
 /* #Buttons
 ================================================== */
 .btn {
@@ -2868,5 +2880,162 @@ body {
   .video-post-card .text p img {
     width: 3.46vw;
     margin-left: .78vw;
+  }
+}
+
+/* #Coupons
+================================================== */
+.coupons {
+  padding-bottom: 6.77vw;
+}
+
+.coupons .container {
+  width: 77%;
+}
+
+.coupons .heading {
+  text-align: center;
+  margin-bottom: 2vw;
+}
+
+.coupons .heading img {
+  width: 6.56vw;
+  margin: 0 auto;
+  margin-bottom: 1vw;
+}
+
+.coupons .heading h2 {
+  margin-bottom: .5vw;
+}
+
+.coupons ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.coupons ul li {
+  flex: 0 0 50%;
+}
+
+.coupons ul li > div {
+  position: relative;
+}
+
+.coupons ul .text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  width: 70%;
+}
+
+.coupons ul .img {
+  flex: 0 0 50%;
+  text-align: center;
+}
+
+.coupons ul .img img {
+  width: 12.5vw;
+  margin: 0 auto;
+  margin-bottom: 1vw;
+}
+
+.coupons ul .img p {
+  width: 10vw;
+  line-height: 1.42;
+  margin: 0 auto;
+}
+
+.coupons ul .text-wrap {
+  text-align: center;
+  padding-right: 1.25vw;
+}
+
+.coupons ul .text-wrap h3 {
+  line-height: 1.1;
+}
+
+.coupons ul .text-wrap p {
+  margin: .78vw 0 1.5vw 0;
+}
+
+@media (max-width: 1023.98px) {
+  .coupons {
+    padding-bottom: 15.33vw;
+  }
+  
+  .coupons .container {
+    width: 100%;
+  }
+  
+  .coupons .heading {
+    margin: 0 auto;
+    margin-bottom: 2vw;
+    width: 100%;
+  }
+  
+  .coupons .heading img {
+    width: 24.4vw;
+    margin: 0 auto;
+    margin-bottom: 3.33vw;
+  }
+  
+  .coupons .heading h2 {
+    margin: 0 auto;
+    margin-bottom: 2vw;
+    width: 50vw;
+    line-height: 1.2;
+  }
+  
+  .coupons ul {
+    display: block;
+  }
+  
+  .coupons ul li {
+    flex: 0 0 50%;
+  }
+  
+  .coupons ul li > div {
+    position: relative;
+  }
+  
+  .coupons ul .text {
+    position: absolute;
+    top: 48%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+    width: 70%;
+  }
+
+  .coupons ul .img {
+    margin-bottom: 2.66vw;
+  }
+  
+  .coupons ul .img img {
+    width: 38.66vw;
+    margin: 0 auto;
+    margin-bottom: 2vw;
+  }
+  
+  .coupons ul .img p {
+    width: 44vw;
+    line-height: 1;
+    margin: 0 auto;
+  }
+  
+  .coupons ul .text-wrap {
+    text-align: center;
+    padding-right: 0;
+  }
+  
+  .coupons ul .text-wrap h3 {
+    line-height: 1.1;
+  }
+  
+  .coupons ul .text-wrap p {
+    margin: 1.4vw 0 2.66vw 0;
   }
 }
