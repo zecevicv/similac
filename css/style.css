@@ -2729,3 +2729,144 @@ body {
     margin-bottom: 3.33vw;
   }
 }
+
+/* #Video Page Product Slider
+================================================== */
+@media (min-width: 1024px) {
+  .video-page .product-slider {
+    margin-bottom: 6.77vw;
+  }
+  
+  .video-page .product-slider .container {
+    width: 73.9%;
+    position: static;
+    transform: none;
+  }
+  
+  .video-page .product-slider .heading {
+    margin-bottom: 3.125vw;
+  }
+  
+  .video-page .product-card {
+    box-shadow: 0 3px 22px rgb(0 0 0 / 5%);
+  }
+}
+
+@media (max-width: 1023.98px) {
+  .video-page .product-slider {
+    min-height: 0;
+    padding-bottom: 17.33vw;
+  }
+
+  .video-page .product-slider .container {
+    position: static;
+    transform: none;
+  }
+}
+
+/* #Video Posts
+================================================== */
+.video-posts {
+  padding: 2vw 0 6.77vw 0;
+}
+
+.video-posts .container {
+  width: 74%;
+}
+
+.video-posts ul {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -1vw;
+}
+
+.video-posts ul li {
+  flex: 0 0 33.333333%;
+  padding: 1vw;
+}
+
+.video-posts iframe {
+  width: 100%;
+  height: 13.2vw;
+}
+
+.video-post-card {
+  border-radius: .5vw;
+  overflow: hidden;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, .1);
+}
+
+.video-post-card .text {
+  background-color: white;
+  padding: .78vw 1.3vw 1.5vw 1.3vw;
+}
+
+.video-post-card .text a img {
+  display: inline;
+  width: .3vw;
+  vertical-align: baseline;
+}
+
+.video-post-card .text p {
+  display: flex;
+  align-items: center;
+  margin: .5vw 0;
+}
+
+.video-post-card .text p img {
+  width: .83vw;
+  margin-left: .3vw;
+}
+
+@media (max-width: 1023.98px) {
+  .video-posts {
+    padding: 3vw 0 17.33vw 0;
+  }
+  
+  .video-posts .container {
+    width: 90%;
+  }
+  
+  .video-posts ul {
+    display: block;
+    margin: 0;
+  }
+  
+  .video-posts ul li {
+    padding: 0;
+  }
+
+  .video-posts ul li:not(:last-child) {
+    margin-bottom: 4vw;
+  }
+  
+  .video-posts iframe {
+    width: 100%;
+    height: 50.66vw;
+  }
+
+  .video-post-card {
+    border-radius: 1.33vw;
+  }
+  
+  .video-post-card .img img {
+    height: 45vw;
+  }
+  
+  .video-post-card .text {
+    padding: 3.2vw 4vw 4.66vw 4vw;
+  }
+  
+  .video-post-card .text a img {
+    width: 1.33vw;
+  }
+  
+  .video-post-card .text p {
+    margin: 2.66vw 0;
+  }
+  
+  .video-post-card .text p img {
+    width: 3.46vw;
+    margin-left: .78vw;
+  }
+}
