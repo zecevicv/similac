@@ -29,6 +29,10 @@ body {
   color: #C6820A;
 }
 
+.text-gold-light {
+  color: #D0990F;
+}
+
 .text-blue {
   color: #019CDE;
 }
@@ -3762,5 +3766,238 @@ body {
   
   .gold .text li p {
     line-height: 1.28;
+  }
+}
+
+/* #Name Banner
+================================================== */
+.name-banner {
+  position: relative;
+}
+
+.name-banner .container {
+  position: absolute;
+  top: 53%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+.name-banner .breadcrumb {
+  position: absolute;
+  top: 1vw;
+  right: 4.16vw;
+  z-index: 1;
+}
+
+.name-banner .bg img,
+.name-banner .bg picture {
+  width: 100%;
+}
+
+@media (max-width: 1023.98px) {
+  .name-banner .container {
+    top: 64%;
+  }
+  
+  .name-banner .breadcrumb {
+    top: 5vw;
+    right: 5.33vw;
+  }
+}
+
+/* #Name Body
+================================================== */
+.name-body {
+  padding: 2.34vw 0 6.77vw 0;
+}
+
+.name-body .container {
+  width: 74%;
+  display: flex;
+}
+
+/* Sidebar */
+.name-body .sidebar {
+  flex: 0 0 16.77vw;
+  margin-left: 2.34vw;
+}
+
+.name-body .sidebar ul {
+  margin-top: .78vw;
+  box-shadow: 0 3px 24px rgba(0, 0, 0, .1);
+  border-radius: 1vw;
+}
+
+.name-body .sidebar li {
+  padding: 1.5vw;
+  display: flex;
+  align-items: center;
+}
+
+.name-body .sidebar img {
+  width: 1.98vw;
+  height: 2.34vw;
+  object-fit: contain;
+  object-position: center;
+  margin-left: .5vw;
+}
+
+/* Main */
+.name-body .main {
+  padding-top: 1.75vw;
+}
+
+.name-body .top h3 {
+  margin-bottom: .75vw;
+}
+
+.name-body .top p:not(:last-child) {
+  margin-bottom: 2.34vw;
+}
+
+.name-body .bottom {
+  border-top: 1px solid #D2D2D2;
+  margin-top: 3.125vw;
+  padding-top: 2.34vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.name-body .like,
+.name-body .social,
+.name-body .social ul {
+  display: flex;
+  align-items: center;
+}
+
+.name-body .like img,
+.name-body .social img {
+  width: 3.28vw;
+}
+
+.name-body .social p {
+  margin-left: .5vw;
+}
+
+.name-body .like a {
+  margin-right: .78vw;
+}
+
+@media (min-width: 1024px) {
+  .name-body .sidebar li:not(:last-child) {
+    border-bottom: 1px solid #D2D2D2;
+  }
+
+}
+
+@media (max-width: 1023.98px) {
+  .name-body {
+    padding: 6vw 0 17.33vw 0;
+  }
+  
+  .name-body .container {
+    width: 90%;
+    display: block;
+  }
+  
+  /* Sidebar */
+  .name-body .sidebar {
+    margin-left: 0;
+    margin-bottom: 9.33vw;
+  }
+  
+  .name-body .sidebar ul {
+    margin-top: 4.66vw;
+    border-radius: 2.66vw;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .name-body .sidebar li:nth-child(1),
+  .name-body .sidebar li:nth-child(2) {
+    border-bottom: 1px solid #d8d8d8;
+  }
+  
+  .name-body .sidebar li:nth-child(1),
+  .name-body .sidebar li:nth-child(3) {
+    border-left: 1px solid #d8d8d8;
+  }
+  
+  .name-body .sidebar li {
+    padding: 7.5vw 4vw 3.33vw 4vw;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    flex: 0 0 50%;
+    text-align: center;
+  }
+
+  .name-body .sidebar li p {
+    line-height: 1;
+    margin-top: 1vw;
+  }
+  
+  .name-body .sidebar img {
+    width: 12.53vw;
+    height: 11.33vw;
+    margin-left: 0;
+    margin-bottom: 4vw;
+  }
+  
+  /* Main */
+  .name-body .main {
+    padding-top: 0;
+  }
+  
+  .name-body .top h3 {
+    margin-bottom: 3.33vw;
+  }
+
+  .name-body .top p {
+    line-height: 1.3;
+  }
+  
+  .name-body .top p:not(:last-child) {
+    margin-bottom: 14.66vw;
+  }
+  
+  .name-body .bottom {
+    border-top: none;
+    margin-top: 10vw;
+    padding-top: 0;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  
+  .name-body .like,
+  .name-body .social,
+  .name-body .social ul {
+    display: flex;
+    align-items: center;
+  }
+
+  .name-body .social {
+    justify-content: space-between;
+    width: 100%;
+    border-top: 1px solid #D2D2D2;
+    border-bottom: 1px solid #D2D2D2;
+    padding: 4vw 0;
+    margin-top: 6.65vw;
+  }
+  
+  .name-body .like img,
+  .name-body .social img {
+    width: 13vw;
+  }
+  
+  .name-body .social p {
+    margin-left: 0;
+  }
+  
+  .name-body .like a {
+    margin-right: 2vw;
   }
 }

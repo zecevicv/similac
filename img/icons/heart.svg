@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="63" height="63" viewBox="0 0 63 63">
+  <defs>
+    <filter id="Ellipse_1747" x="0" y="0" width="63" height="63" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-color="#1d3bff" flood-opacity="0.102"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Group_8413" data-name="Group 8413" transform="translate(9 6)">
+    <g id="Group_8412" data-name="Group 8412">
+      <g transform="matrix(1, 0, 0, 1, -9, -6)" filter="url(#Ellipse_1747)">
+        <circle id="Ellipse_1747-2" data-name="Ellipse 1747" cx="22.5" cy="22.5" r="22.5" transform="translate(9 6)" fill="#fff"/>
+      </g>
+    </g>
+    <path id="Union_20" data-name="Union 20" d="M10.705,18.678,1.863,10.284a5.821,5.821,0,0,1,0-8.537,6.512,6.512,0,0,1,8.877,0l.51.482.511-.482a6.507,6.507,0,0,1,8.873,0,5.821,5.821,0,0,1,0,8.537l-8.842,8.395a.792.792,0,0,1-1.087,0Z" transform="translate(11.251 14.048)" fill="#d0990f" stroke="rgba(0,0,0,0)" stroke-miterlimit="10" stroke-width="1"/>
+  </g>
+</svg>
