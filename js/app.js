@@ -218,3 +218,20 @@ if (document.querySelector('.category-slider')) {
     });
   }
 }
+
+/* #Product Info
+  ======================================================= */
+if (document.querySelector('.product-info .tab-navigation .swiper')) {
+  new Swiper(".product-info .tab-navigation .swiper", {
+    breakpoints: {
+      0: {
+        slidesPerView: 2.3,
+        freeMode: true,
+      },
+      1024: {
+        slidesPerView: 5,
+        freeMode: false,
+      }
+    }
+  });
+}
