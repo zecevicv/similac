@@ -6057,3 +6057,366 @@ body {
     line-height: 1.26;
   }
 }
+
+/* #Checklist
+================================================== */
+.checklist {
+  padding: 2.6vw 0 6.77vw 0;
+}
+
+.checklist .container {
+  width: 54.6%;
+}
+
+.checklist .heading {
+  text-align: center;
+  padding: 0 1.3vw;
+}
+
+.checklist .heading h2 {
+  margin-bottom: 1vw;
+}
+
+/* Body */
+.checklist .tab-panel.active {
+  padding: 2vw;
+  margin: -2vw;
+}
+
+.checklist .body {
+  border-radius: .5vw;
+  box-shadow: 0 3px 1vw rgba(0, 0, 0, .1);
+  padding-bottom: 2.34vw;
+  position: relative;
+}
+
+.checklist .body::after {
+  content: '';
+  width: 100%;
+  height: .78vw;
+  bottom: 0;
+  left: 0;
+  background-image: linear-gradient(to left, #E2AB44, #FEE185);
+}
+
+.checklist .section {
+  padding: 2.34vw 2.34vw 3.125vw 2.34vw;
+}
+
+.checklist .section:not(:last-child) {
+  border-bottom: 1px solid #D2D2D2;
+}
+
+.checklist .section:last-child {
+  padding-bottom: 0;
+}
+
+.checklist .section h2 {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.3vw;
+}
+
+.checklist .section h2 img {
+  width: 3.125vw;
+  height: 3.65vw;
+  object-fit: contain;
+  margin-left: 1.3vw;
+}
+
+.checklist .row {
+  display: flex;
+  margin-bottom: 2vw;
+}
+
+.checklist .row .col {
+  flex: 0 0 50%;
+}
+
+.checklist .group:not(:last-child) {
+  margin-bottom: 2.6vw;
+}
+
+.checklist .group h3 {
+  margin-bottom: .78vw;
+}
+
+.checklist .group .checkbox:not(:last-child) {
+  margin-bottom: .78vw;
+}
+
+.checklist .textarea label {
+  display: block;
+  margin-bottom: .5vw;  
+}
+
+.checklist textarea {
+  width: 100%;
+  resize: none;
+  border: 1px solid #D2D2D2;
+}
+
+/* Banner */
+.checklist-banner {
+  position: relative;
+  padding: 0 2vw;
+}
+
+.checklist-banner .bg img,
+.checklist-banner .bg picture {
+  width: 100%;
+}
+
+.checklist-banner .text {
+  position: absolute;
+  top: 60%;
+  transform: translateY(-50%);
+  right: 10vw;
+}
+
+.checklist-banner .text p {
+  margin: .5vw 0 1vw 0;
+}
+
+/* Social */
+.checklist .social {
+  margin: 1.5vw 0;
+}
+
+.checklist .social,
+.checklist .social ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.checklist .social:not(.social-1) {
+  justify-content: center;
+}
+
+.checklist .social ul li:nth-child(4) {
+  margin-right: auto;
+}
+
+.checklist .social img {
+  width: 3.28vw;
+}
+
+.checklist .social p {
+  margin-left: .5vw;
+}
+
+.checklist .tab-navigation {
+  border-radius: 500px;
+  background-color: white;
+  width: 38.6vw;
+  margin: 1.5vw auto 3.125vw auto;
+  text-align: center;
+  height: 2.39vw;
+  display: flex;
+  align-items: center;
+  padding: 0 .78vw;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, .1);
+}
+
+.checklist .tab-navigation .swiper {
+  width: 100%;
+}
+
+.checklist .tab-navigation .swiper-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.checklist .tab-navigation .swiper-slide {
+  width: auto!important;
+}
+
+.checklist .tab-btn a {
+  height: 1.5vw;
+  border-radius: 500px;
+  padding: 0 .78vw;
+  display: inline-block;
+}
+
+.checklist .tab-btn.active a {
+  background-image: linear-gradient(#E2AB44, #FEE185);
+}
+
+@media (max-width: 1023.98px) {
+  .checklist {
+    padding: 2.6vw 0 6.77vw 0;
+  }
+  
+  .checklist .container {
+    width: 100%;
+  }
+  
+  .checklist .heading {
+    text-align: center;
+    padding: 0 5%;
+    margin-bottom: 8vw;
+  }
+  
+  .checklist .heading h2 {
+    margin-bottom: 2.33vw;
+  }
+  
+  /* Body */
+  .checklist .tab-panel.active {
+    padding: 2vw 5%;
+    margin: 0;
+  }
+  
+  .checklist .body {
+    border-radius: 1.33vw;
+    box-shadow: 0 3px 2.66vw rgba(0, 0, 0, .1);
+    padding-bottom: 8vw;
+    position: relative;
+  }
+  
+  .checklist .body::after {
+    content: '';
+    width: 100%;
+    height: .78vw;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(to left, #E2AB44, #FEE185);
+  }
+  
+  .checklist .section {
+    padding: 6vw;
+  }
+  
+  .checklist .section:not(:last-child) {
+    border-bottom: 1px solid #D2D2D2;
+  }
+  
+  .checklist .section:last-child {
+    padding-bottom: 0;
+  }
+  
+  .checklist .section h2 {
+    display: flex;
+    align-items: center;
+    margin-bottom: 6.65vw;
+  }
+  
+  .checklist .section h2 img {
+    width: 12vw;
+    height: 13vw;
+    margin-left: 2vw;
+  }
+  
+  .checklist .row {
+    display: block;
+    margin-bottom: 9.33vw;
+  }
+  
+  .checklist .row .col {
+    margin-bottom: 9.33vw;
+  }
+  
+  .checklist .group:not(:last-child) {
+    margin-bottom: 9.33vw;
+  }
+  
+  .checklist .group h3 {
+    margin-bottom: 4vw;
+  }
+  
+  .checklist .group .checkbox:not(:last-child) {
+    margin-bottom: 4vw;
+  }
+  
+  .checklist .textarea label {
+    display: block;
+    margin-bottom: 4vw;  
+  }
+  
+  .checklist textarea {
+    width: 100%;
+    resize: none;
+    border: 1px solid #D2D2D2;
+  }
+  
+  /* Banner */
+  .checklist-banner {
+    position: relative;
+    padding: 0 5.33vw;
+  }
+  
+  .checklist-banner .text {
+    position: absolute;
+    top: auto;
+    transform: translateX(-50%);
+    right: auto;
+    bottom: 9.33vw;
+    left: 50%;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .checklist-banner .text p {
+    margin: 2.66vw 0 6.65vw 0;
+  }
+
+  /* Social */
+  .checklist .social {
+    padding: 4vw 0 6.65vw 0;
+  }
+  
+  .checklist .social,
+  .checklist .social:not(.social-1) {
+    justify-content: center;
+  }
+  
+  .checklist .social.social-1 ul {
+    flex-grow: 0;
+  }
+  
+  .checklist .social ul li:nth-child(4) {
+    margin-right: 0;
+  }
+  
+  .checklist .social img {
+    width: 13vw;
+  }
+  
+  .checklist .social p {
+    margin-left: 2vw;
+  }
+
+  .checklist .tab-navigation {
+    border-radius: 500px;
+    background-color: transparent;
+    width: 100%;
+    margin-bottom: 10vw;
+    height: 7.46vw;
+    padding: 0;
+    box-shadow: none;
+  }
+
+  .checklist .tab-navigation .swiper {
+    padding: 0 5.33vw;
+  }
+  
+  .checklist .tab-navigation .swiper-slide:not(:last-child) {
+    margin-left: 2.66vw;
+  }
+  
+  .checklist .tab-btn a {
+    height: 7.46vw;
+    padding: 0 2.66vw;
+    align-items: center;
+    display: flex;
+    border: 1px solid #D19910;
+    background-color: white;
+  }
+  
+  .checklist .tab-btn.active a {
+    background-image: linear-gradient(#E2AB44, #FEE185);
+    border: 1px solid transparent;
+  }
+}

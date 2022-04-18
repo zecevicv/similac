@@ -59,6 +59,23 @@ if (document.querySelector('.product-slider .tab-content .swiper')) {
   });
 }
 
+/* #Checklist Slider
+  ======================================================= */
+if (document.querySelector('.checklist .tab-navigation .swiper')) {
+  new Swiper(".checklist .tab-navigation .swiper", {
+    breakpoints: {
+      0: {
+        slidesPerView: 2.3,
+        freeMode: true,
+      },
+      1024: {
+        slidesPerView: 4,
+        freeMode: false,
+      }
+    }
+  });
+}
+
 /* #Blog Post Slider
   ======================================================= */
 if (document.querySelector('.blog-post-slider .tab-navigation .swiper')) {
