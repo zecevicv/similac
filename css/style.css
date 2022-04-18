@@ -526,8 +526,13 @@ body {
   margin-bottom: .78vw;
 }
 
+.infant-development-page .banner .text {
+  width: 38vw;
+}
+
 @media (max-width: 1023.98px) {
-  .banner .text {
+  .banner .text,
+  .infant-development-page .banner .text {
     position: static;
     transform: none;
     text-align: center;
@@ -5798,5 +5803,257 @@ body {
   .product-info .tab-btn.active a {
     background-image: linear-gradient(#E2AB44, #FEE185);
     border: 1px solid transparent;
+  }
+}
+
+/* #Infant Development
+================================================== */
+.infant-development {
+  padding: 3vw 0 3.9vw 0;
+}
+
+.infant-development .container {
+  width: 74%;
+}
+
+/* Navigation */
+.infant-development .navigation {
+  margin: 0 auto;
+  width: 33.85vw;
+  border-radius: .5vw;
+  box-shadow: 0 3px 24px rgba(0, 0, 0, .1);
+}
+
+.infant-development .navigation .top {
+  text-align: center;
+  padding: 1vw 0 1.3vw 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.infant-development .navigation .nums {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: .78vw;
+  border: 1px solid #D2D2D2;
+  border-radius: 500px;
+  padding: 5px;
+}
+
+.infant-development .navigation .nums a {
+  width: 2vw;
+  height: 2vw;
+  border-radius: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.infant-development .navigation .nums a.active {
+  background-image: linear-gradient(to bottom, #E2AB44, #FEE185);
+}
+
+.infant-development .navigation .nums a:not(:last-child) {
+  margin-left: .416vw;
+}
+
+.infant-development .navigation .bottom {
+  border-top: 1px solid #E8E8E8;
+  text-align: center;
+  padding: .78vw 0 1.3vw 0;
+}
+
+/* Heading */
+.infant-development .heading {
+  width: 49vw;
+  text-align: center;
+  margin: 3.9vw auto 2.8vw auto;
+}
+
+.infant-development .heading .links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.infant-development .heading .links > *:not(:last-child) {
+  margin-left: 1.4vw;
+}
+
+.infant-development .heading > p {
+  margin: 1vw 0 1.5vw 0;
+}
+
+/* Btns */
+.infant-development .btns {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 1.8vw;
+  border-top: 1px solid #D2D2D2;
+  margin-top: 3.125vw;
+}
+
+.infant-development .btn-quintary {
+  border-color: black;
+}
+
+.infant-development .btn-quintary img {
+  margin-right: 0;
+  margin-left: 2.6vw;
+}
+
+/* Expandable */
+.infant-development .expandable {
+  background-color: white;
+  border-radius: 1vw;
+  box-shadow: 0 3px 24px rgba(0, 0, 0, .1);
+  display: flex;
+  padding: 1.5vw;
+}
+
+.infant-development .expandable:not(:last-child) {
+  margin-bottom: 1vw;
+}
+
+.infant-development .expandable .img {
+  flex: 0 0 26vw;
+  margin-left: 4.16vw;
+}
+
+.infant-development .expandable .img img {
+  width: 100%;
+  height: 18.5vw;
+  object-fit: cover;
+  object-position: center;
+  border-radius: .5vw;
+}
+
+.infant-development .expandable .text h3 {
+  margin: 0 0 .5vw;
+}
+
+.infant-development .expandable .text p:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 1023.98px) {
+  .infant-development {
+    padding: 6vw 0 17.33vw 0;
+  }
+  
+  .infant-development .container {
+    width: 90%;
+  }
+  
+  /* Navigation */
+  .infant-development .navigation {
+    width: 100%;
+    border-radius: 1.33vw;
+  }
+  
+  .infant-development .navigation .top {
+    padding: 6.65vw 6.65vw 5vw 6.65vw;
+  }
+  
+  .infant-development .navigation .nums {
+    flex-wrap: wrap;
+    margin-top: 2vw;
+    border: none;
+    padding: 5px;
+  }
+  
+  .infant-development .navigation .nums a {
+    width: 10vw;
+    height: 10vw;
+    margin: 1.66vw;
+    border: 1px solid #D2D2D2;
+  }
+  
+  .infant-development .navigation .nums a:not(:last-child) {
+    margin-left: .416vw;
+  }
+  
+  .infant-development .navigation .bottom {
+    padding: 3.33vw 13vw;
+  }
+  
+  /* Heading */
+  .infant-development .heading {
+    width: 100%;
+    text-align: right;
+    margin: 10vw 0;
+  }
+
+  .infant-development .heading h2 {
+    width: 65%;
+    margin-bottom: 2vw;
+  }
+  
+  .infant-development .heading .links {
+    display: block;
+    margin-top: 6.65vw;
+  }
+  
+  .infant-development .heading .links > *:not(:last-child) {
+    margin-left: 0;
+    margin-bottom: 3.33vw;
+  }
+
+  .infant-development .heading .links a {
+    display: block;
+  }
+  
+  .infant-development .heading > p {
+    margin: 0;
+  }
+  
+  /* Btns */
+  .infant-development .btns {
+    padding-top: 0;
+    border-top: none;
+    margin-top: 9vw;
+  }
+  
+  .infant-development .btn-quintary img {
+    margin-right: 0;
+    margin-left: 6.65vw;
+  }
+  
+  .infant-development .btn-primary img {
+    margin-right: 6.65vw;
+  }
+
+  /* Expandable */
+  .infant-development .expandable {
+    border-radius: 2.66vw;
+    display: block;
+    padding: 4vw;
+  }
+
+  .infant-development .expandable:not(:last-child) {
+    margin-bottom: 2.66vw;
+  }
+
+  .infant-development .expandable .img {
+    margin-left: 0;
+    margin-bottom: 2.66vw;
+  }
+
+  .infant-development .expandable .img img {
+    height: 57.86vw;
+    border-radius: 1.33vw;
+  }
+
+  .infant-development .expandable .text h3 {
+    margin: 0 0 2vw;
+  }
+
+  .infant-development .expandable .text p:last-child {
+    margin-bottom: 0;
+    line-height: 1.26;
   }
 }
