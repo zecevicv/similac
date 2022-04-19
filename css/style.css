@@ -5887,6 +5887,16 @@ body {
   margin: 1vw 0 1.5vw 0;
 }
 
+.infant-development .heading ol {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.infant-development .heading ol li:not(:last-child) {
+  margin-left: 1.4vw;
+}
+
 /* Btns */
 .infant-development .btns {
   display: flex;
@@ -6009,6 +6019,15 @@ body {
   
   .infant-development .heading > p {
     margin: 0;
+  }
+
+  .infant-development .heading ol {
+    display: block;
+  }
+  
+  .infant-development .heading ol li:not(:last-child) {
+    margin-left: 0;
+    margin-bottom: 3.33vw;
   }
   
   /* Btns */
