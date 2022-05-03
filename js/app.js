@@ -8,7 +8,32 @@
   
     header.classList.toggle('show');
     body.classList.toggle('no-scroll');
+    headerSearchMenu.classList.remove('show');
   });
+
+/* #Search Menu
+  ======================================================= */
+const headerSearchIcons = document.querySelectorAll('.header-search-icon');
+const headerSearchMenu = document.querySelector('.header-search-menu');
+const headerSearchClose = document.querySelector('.header-search-menu .close');
+
+headerSearchIcons.forEach((icon) => {
+  icon.addEventListener('click', (e) => {
+    e.preventDefault();
+  
+    headerSearchMenu.classList.add('show');
+    body.classList.add('no-scroll');
+  });
+})
+
+
+headerSearchClose.addEventListener('click', (e) => {
+  e.preventDefault();
+
+  headerSearchMenu.classList.remove('show');
+  body.classList.remove('no-scroll');
+  header.classList.remove('show');
+});
 
 /* #Home Banner
   ======================================================= */
