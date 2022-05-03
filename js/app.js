@@ -113,6 +113,27 @@ if (document.querySelector('.checklist .tab-navigation .swiper')) {
   });
 }
 
+/* #Diaper Slider
+  ======================================================= */
+if (document.querySelector('.diaper .swiper')) {
+  new Swiper(".diaper .swiper", {
+    centeredSlides: true,
+    loop: true,
+    breakpoints: {
+      0: {
+        slidesPerView: 2,
+      },
+      1024: {
+        slidesPerView: 4.75,
+      }
+    },
+    navigation: {
+      nextEl: ".diaper .next",
+      prevEl: ".diaper .prev",
+    },
+  });
+}
+
 /* #Blog Post Slider
   ======================================================= */
 if (document.querySelector('.blog-post-slider .tab-navigation .swiper')) {
@@ -220,8 +241,6 @@ if (document.querySelector('.category-slider')) {
   }
 
   const sliders = document.querySelectorAll('.category-slider .slider');
-
-  console.log(sliders);
 
   if (!document.querySelector('.category-slider').classList.contains('alt')) {
     sliders.forEach((slider) => {

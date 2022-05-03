@@ -7800,3 +7800,310 @@ body {
     margin-right: 2vw;
   }
 }
+
+/* #Diaper
+================================================== */
+.diaper {
+  padding: 3.125vw 0 9.375vw 0;
+}
+
+.diaper .container {
+  width: 65.5%;
+}
+
+/* Heading */
+.diaper .heading {
+  text-align: center;
+  margin: 0 auto;
+  width: 47.7vw;
+  margin-bottom: 2.6vw;
+} 
+
+.diaper .heading h2 {
+  margin: 0 auto;
+  width: 32.8vw;
+  line-height: 1.1;
+  margin-bottom: 1.3vw;
+}
+
+/* Img */
+.diaper .img {
+  text-align: center;
+}
+
+.diaper .img h2 {
+  margin-bottom: 1.4vw;
+}
+
+.diaper .img .btn {
+  border-color: #019CDE;
+}
+
+.diaper .img .slider {
+  position: relative;
+  height: 22.39vw;
+  display: flex;
+  align-items: center;
+  padding: 0 2.44vw;
+  margin-bottom: 1.2vw;
+}
+
+.diaper .img .next,
+.diaper .img .prev {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.diaper .img .next img,
+.diaper .img .prev img {
+  width: 2.44vw;
+}
+
+.diaper .img .next {
+  left: 0;
+}
+
+.diaper .img .prev {
+  right: 0;
+}
+
+.diaper .img .bg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.diaper .img .bg img {
+  width: 22.39vw;
+  border-radius: 50%;
+  box-shadow: 0 3px 24px rgba(0, 0, 0, .08);
+}
+
+.diaper .img .swiper {
+  margin: 0;
+  height: 100%;
+}
+
+.diaper .img .swiper-slide {
+  padding: 0;
+  height: 100%;
+}
+
+.diaper .img .swiper-slide > div {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.diaper .img .swiper-slide img {
+  width: 6vw;
+  height: 5.1vw;
+  object-fit: contain;
+  object-position: center;
+  margin: auto;
+  transform: scale(1);
+  transition: all .4s ease;
+}
+
+.diaper .img .swiper-slide.swiper-slide-active img {
+  transform: scale(2.5);
+}
+ 
+/* Text */
+.diaper .container > .text {
+  margin-top: 2.34vw;
+}
+
+.diaper .text .icons ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+.diaper .text .icons ul li {
+  flex: 0 0 30%
+}
+
+.diaper .text .icons ul li > div {
+  display: flex;
+}
+
+.diaper .text .icons .img {
+  flex-shrink: 0;
+  margin-left: 1vw;
+}
+
+.diaper .text .icons img {
+  width: 4.16vw;
+  border-radius: 50%;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, .1);
+}
+
+.diaper .text .icons .text {
+  margin-top: .8vw;
+}
+
+.diaper .text .desc {
+  border-top: 1px solid #D2D2D2;
+  padding-top: 1.5vw;
+  margin-top: 1.8vw;
+  display: flex;
+  justify-content: space-between;
+}
+
+.diaper .text .desc .col {
+  flex: 0 0 47.8%;
+  padding-left: 1vw;
+}
+
+.diaper .text .desc .col:first-child {
+  padding-left: 8vw;
+}
+
+.diaper .text .desc .col h3 {
+  margin-bottom: .6vw;
+}
+
+.diaper .text .desc .col p {
+  margin-bottom: 1vw;
+}
+
+.diaper .text .desc ul {
+  display: flex;
+}
+
+.diaper .text .desc ul li:not(:first-child) {
+  padding-right: .78vw;
+}
+
+.diaper .text .desc ul li a {
+  margin-right: .25vw;
+}
+
+@media (max-width: 1023.98px) {
+  .diaper {
+    padding: 6vw 0 17.33vw 0;
+  }
+  
+  .diaper .container {
+    width: 100%;
+  }
+  
+  /* Heading */
+  .diaper .heading {
+    width: 90%;
+    margin-bottom: 16.66vw;
+  } 
+  
+  .diaper .heading h2 {
+    width: 90%;
+    margin-bottom: 3.33vw;
+  }
+  
+  /* Img */
+  .diaper .img h2 {
+    margin-bottom: 4vw;
+  }
+  
+  .diaper .img .slider {
+    height: 57.33vw;
+    padding: 0;
+    margin-bottom: 7.33vw;
+  }
+  
+  .diaper .swiper-arrows {
+    display: none;
+  }
+
+  .diaper .img .bg img {
+    width: 57.33vw;
+  }
+  
+  .diaper .img .swiper {
+    margin: 0;
+    height: 100%;
+  }
+  
+  .diaper .img .swiper-slide {
+    padding: 0;
+    height: 100%;
+  }
+  
+  .diaper .img .swiper-slide img {
+    width: 20vw;
+    height: 17.33vw;
+  }
+  
+  .diaper .img .swiper-slide.swiper-slide-active img {
+    transform: scale(1.75);
+  }
+   
+  /* Text */
+  .diaper .container > .text {
+    margin-top: 8vw;
+    padding: 0 5.33vw;
+  }
+  
+  .diaper .text .icons ul {
+    display: block;
+  }
+
+  .diaper .text .icons ul li > div {
+    align-items: center;
+  }
+  
+  .diaper .text .icons ul li:not(:last-child) {
+    margin-bottom: 5.33vw;
+  }
+  
+  .diaper .text .icons .img {
+    flex-shrink: 0;
+    margin-left: 3.33vw;
+  }
+  
+  .diaper .text .icons img {
+    width: 24vw;
+  }
+  
+  .diaper .text .icons .text {
+    margin-top: 0;
+  }
+  
+  .diaper .text .desc {
+    border-top: none;
+    padding-top: 0;
+    margin-top: 13.33vw;
+    display: block;
+  }
+  
+  .diaper .text .desc .col {
+    flex: 0 0 47.8%;
+    padding-left: 0;
+  }
+  
+  .diaper .text .desc .col:first-child {
+    padding-left: 0;
+    margin-bottom: 8vw;
+  }
+  
+  .diaper .text .desc .col h3 {
+    margin-bottom: 1.5vw;
+  }
+  
+  .diaper .text .desc .col p {
+    margin-bottom: 4vw;
+  }
+  
+  .diaper .text .desc ul {
+    display: flex;
+  }
+  
+  .diaper .text .desc ul li:not(:first-child) {
+    padding-right: 2vw;
+  }
+  
+  .diaper .text .desc ul li a {
+    margin-right: 1vw;
+  }
+}
