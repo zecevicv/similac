@@ -591,6 +591,68 @@ body {
   }
 }
 
+/* #Header Desktop Menu
+================================================== */
+.header .dropdown {
+  position: static;
+}
+
+.header .dropdown-menu {
+  width: 100%;
+  background-color: white;
+  border-top: 4px solid #E2AB44;
+  padding: 2.6vw 0 3.125vw 0;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, .24);
+}
+
+.header .dropdown-menu ul {
+  display: block;
+}
+
+.header .dropdown-menu li {
+  margin: .39vw 0;
+}
+
+.header .dropdown-menu .row {
+  display: flex;
+  justify-content: center;
+}
+
+.header .dropdown-menu .col {
+  flex: 0 0 17.18vw;
+  padding: 0 1.3vw;
+}
+
+.header .dropdown-menu .col:not(:last-child) {
+  border-left: 1px solid #DBDBDB;
+}
+
+.header .dropdown .dropdown-toggler {
+  position: relative;
+}
+
+.header .dropdown .dropdown-toggler::after {
+  content: '';
+  position: absolute;
+  bottom: -1.81vw;
+  left: 50%;
+  transform: translateX(-50%);
+  width: .83vw;
+  height: .57vw;
+  background-image: url('../img/icons/triangle-gold.svg');
+  background-size: contain;
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  opacity: 0;
+  visibility: hidden;
+  transition: all .4s ease;
+}
+
+.header .dropdown.show .dropdown-toggler::after {
+  opacity: 1;
+  visibility: visible;
+}
+
 /* #Banner
 ================================================== */
 .banner {
