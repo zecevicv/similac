@@ -1357,7 +1357,8 @@ body {
     justify-content: center;
   }
 
-  .footer-join h2 {
+  .footer-join .text > h2,
+  .footer-join .text > p {
     margin: 2.66vw 0 6vw 0;
   }
 }
@@ -2688,11 +2689,11 @@ body {
   object-position: center;
 }
 
-.blog-post .content h2 {
+.blog-post .content h3 {
   margin-bottom: 1vw;
 }
 
-.blog-post .content h3 {
+.blog-post .content h4 {
   margin: 1.3vw 0;
 }
 
@@ -2740,7 +2741,7 @@ body {
   text-align: center;
 }
 
-.blog-post .links h3 {
+.blog-post .links p {
   margin-bottom: 1vw;
 }
 
@@ -2772,6 +2773,31 @@ body {
 .blog-post .links .link img {
   width: .36vw;
   margin-right: .25vw;
+}
+
+/* Font Sizes */
+.blog-post .content p,
+.blog-post .content ul,
+.blog-post .content h4 {
+  font-size: .937vw;
+}
+
+.blog-post .content h3,
+.blog-post .content b {
+  font-size: 1.97vw;
+}
+
+@media (max-width: 1023.98px) {
+  .blog-post .content p,
+  .blog-post .content ul,
+  .blog-post .content h4 {
+    font-size: 4.26vw;
+  }
+
+  .blog-post .content h3,
+  .blog-post .content b {
+    font-size: 6.65vw;
+  }
 }
 
 /* Expandable */
