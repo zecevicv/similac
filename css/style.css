@@ -2630,6 +2630,30 @@ body {
   margin-bottom: 1.3vw;
 }
 
+.blog-post .heading .links {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2vw;
+}
+
+.blog-post .heading .links > *:not(:last-child) {
+  margin-left: 1.4vw;
+}
+
+.blog-post .heading .links > p {
+  margin: 0;
+}
+
+.blog-post .heading ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.blog-post .heading ul li:not(:last-child) {
+  margin-left: 1.4vw;
+}
+
 /* Social */
 .blog-post .social {
   border-bottom: 1px solid #D2D2D2;
@@ -2856,6 +2880,35 @@ body {
   .blog-post .heading h3 {
     width: 100%;
     margin-bottom: 5.33vw;
+  }
+
+  .blog-post .heading .links {
+    display: block;
+    margin-top: 0;
+    margin-bottom: 6vw;
+    text-align: right;
+  }
+  
+  .blog-post .heading .links > *:not(:last-child) {
+    margin-left: 0;
+    margin-bottom: 3.33vw;
+  }
+
+  .blog-post .heading .links a {
+    display: block;
+  }
+  
+  .blog-post .heading > p {
+    margin: 0;
+  }
+
+  .blog-post .heading ul {
+    display: block;
+  }
+  
+  .blog-post .heading ul li:not(:last-child) {
+    margin-left: 0;
+    margin-bottom: 3.33vw;
   }
   
   /* Social */
