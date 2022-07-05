@@ -1619,7 +1619,11 @@ body {
   border-radius: .5vw;
 }
 
-.blog-post-slider .tab-content .img::after {
+.blog-post-slider .tab-content .img a {
+  position: relative;
+}
+
+.blog-post-slider .tab-content .img a::after {
   content: '';
   position: absolute;
   bottom: 0;
@@ -1744,7 +1748,7 @@ body {
     border-radius: 1.33vw;
   }
   
-  .blog-post-slider .tab-content .img::after {
+  .blog-post-slider .tab-content .img a::after {
     border-radius: 1.33vw;
   }
   
@@ -1817,7 +1821,11 @@ body {
   border-radius: .5vw;
 }
 
-.home-presents .top .img::after {
+.home-presents .top .img a {
+  position: relative;
+}
+
+.home-presents .top .img a::after {
   content: '';
   position: absolute;
   bottom: 0;
