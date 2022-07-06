@@ -1,16 +1,3 @@
-/* #Hamburger
-  ======================================================= */
-const header = document.querySelector('.header');
-const headerBtn = document.querySelector('.header-hamburger');
-
-headerBtn.addEventListener('click', (e) => {
-  e.preventDefault();
-
-  header.classList.toggle('show');
-  body.classList.toggle('no-scroll');
-  headerSearchMenu.classList.remove('show');
-});
-
 /* #Search Menu
   ======================================================= */
 const headerSearchIcons = document.querySelectorAll('.header-search-icon');

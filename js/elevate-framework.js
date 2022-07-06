@@ -47,7 +47,7 @@ if (accordions) {
     const collapsibles = accordion.querySelectorAll('.collapsible');
 
     accordion.addEventListener('click', (e) => {
-      if (e.target.closest('.collapse-toggler')) {
+      if (e.target.closest('.collapse-toggler') && !accordion.closest('.header')) {
         e.preventDefault();
 
         const collapsible = e.target.closest('.collapsible');
@@ -90,16 +90,25 @@ const dropdowns = document.querySelectorAll('.dropdown');
 
 if (dropdowns) {
   dropdowns.forEach((dropdown) => {
-    if (window.innerWidth > 1024) {
-      // Hover
-      if (dropdown.classList.contains('hover')) {
-        dropdown.addEventListener('mouseover', (e) => {
-          dropdown.classList.add('show');
-        });
-        dropdown.addEventListener('mouseout', (e) => {
-          dropdown.classList.remove('show');
-        });
-        // Click
+    if (!dropdown.closest('.header')) {
+      if (window.innerWidth > 1024) {
+        // Hover
+        if (dropdown.classList.contains('hover')) {
+          dropdown.addEventListener('mouseover', (e) => {
+            dropdown.classList.add('show');
+          });
+          dropdown.addEventListener('mouseout', (e) => {
+            dropdown.classList.remove('show');
+          });
+          // Click
+        } else {
+          dropdown.addEventListener('click', (e) => {
+            if (e.target.closest('.dropdown-toggler')) {
+              e.preventDefault();
+              dropdown.classList.toggle('show');
+            }
+          });
+        }
       } else {
         dropdown.addEventListener('click', (e) => {
           if (e.target.closest('.dropdown-toggler')) {
@@ -108,13 +117,6 @@ if (dropdowns) {
           }
         });
       }
-    } else {
-      dropdown.addEventListener('click', (e) => {
-        if (e.target.closest('.dropdown-toggler')) {
-          e.preventDefault();
-          dropdown.classList.toggle('show');
-        }
-      });
     }
   });
 }
