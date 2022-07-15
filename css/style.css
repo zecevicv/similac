@@ -2734,15 +2734,8 @@ body {
   margin-bottom: 2.6vw;
 }
 
-.blog-post .content .post-img {
+.blog-post .content > img {
   margin: 2.6vw 0;
-}
-
-.blog-post .content .post-img:last-child {
-  margin-bottom: 0;
-}
-
-.blog-post .content .post-img img {
   width: 100%;
   height: 22.7vw;
   border-radius: .5vw;
@@ -2758,8 +2751,13 @@ body {
   margin: 1.3vw 0;
 }
 
-.blog-post .content p {
+.blog-post .content p,
+.blog-post .content a {
   margin-bottom: 1.3vw;
+}
+
+.blog-post .content a {
+  display: inline-block;
 }
 
 .blog-post .content ul {
@@ -2839,7 +2837,8 @@ body {
 /* Font Sizes */
 .blog-post .content p,
 .blog-post .content ul,
-.blog-post .content h4 {
+.blog-post .content h4,
+.blog-post .content a {
   font-size: .937vw;
 }
 
@@ -2848,10 +2847,19 @@ body {
   font-size: 1.97vw;
 }
 
+.blog-post .content h3 {
+  color: #D0990F;
+}
+
+.blog-post .content a {
+  color: #019CDE;
+}
+
 @media (max-width: 1023.98px) {
   .blog-post .content p,
   .blog-post .content ul,
-  .blog-post .content h4 {
+  .blog-post .content h4,
+  .blog-post .content a {
     font-size: 4.26vw;
   }
 
@@ -2988,17 +2996,14 @@ body {
     margin-bottom: 6.65vw;
   }
   
-  .blog-post .content .post-img {
-    margin: 6vw -5% 10.66vw -5%;
+  .blog-post .content > img {
+    margin: 6vw 0 10.66vw 0;
+    height: 43.6vw;
+    border-radius: 0;
   }
   
   .blog-post .content .post-img:last-child {
     margin-bottom: 0;
-  }
-  
-  .blog-post .content .post-img img {
-    height: 43.6vw;
-    border-radius: 0;
   }
   
   .blog-post .content h2 {
@@ -3009,7 +3014,8 @@ body {
     margin: 4vw 0;
   }
   
-  .blog-post .content p {
+  .blog-post .content p,
+  .blog-post .content a {
     margin-bottom: 3.33vw;
   }
   
@@ -8362,5 +8368,143 @@ body {
   
   .video-popup .popup-close img {
     width: 7.34vw;
+  }
+}
+
+/* #Weeks of Pregnancy 
+================================================== */
+.post-pregnancy-card {
+  box-shadow: 0 3px 24px rgba(0, 0, 0, .1);
+  padding: 3.125vw;
+  border-radius: 1vw;
+  position: relative;
+  overflow: hidden;
+  margin: 0 0 1.8vw 0;
+}
+
+.post-pregnancy-card::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: .78vw;
+  background-image: linear-gradient(to right, #E2AB44, #FEE185);
+}
+
+.post-pregnancy-card .text {
+  position: relative;
+  z-index: 1;
+}
+
+.post-pregnancy-card h4 {
+  margin-top: 0!important;
+}
+
+.post-pregnancy-card .heading {
+  width: 26.25vw;
+  margin-bottom: .7vw;
+}
+
+.post-pregnancy-card .bars {
+  display: flex;
+}
+
+.post-pregnancy-card .bar {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.post-pregnancy-card .bar:not(:last-child) {
+  margin-left: 1.5vw;
+}
+
+.post-pregnancy-card .bar h3 {
+  text-align: right;
+  margin-bottom: .5vw;
+  color: black;
+}
+
+.post-pregnancy-card .nums {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #D2D2D2;
+  border-radius: 500px;
+  padding: 5px;
+}
+
+.post-pregnancy-card .nums a {
+  width: 2vw;
+  height: 2vw;
+  border-radius: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0;
+  color: black;
+}
+
+.post-pregnancy-card .nums a.active {
+  background-image: linear-gradient(to bottom, #E2AB44, #FEE185);
+}
+
+.post-pregnancy-card .nums a:not(:last-child) {
+  margin-left: .416vw;
+}
+
+.post-pregnancy-card .img {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.post-pregnancy-card .img img {
+  width: 18.22vw;
+}
+
+@media (max-width: 1023.98px) {
+  .post-pregnancy-card .bars {
+    display: none;
+  }
+
+
+  .post-pregnancy-card {
+    padding: 5.33vw 5.33vw 8vw 5.33vw;
+    border-radius: 2.66vw;
+    margin: 10.33vw 0;
+  }
+  
+  .post-pregnancy-card::after {
+    height: 2.66vw;
+  }
+  
+  .post-pregnancy-card .heading {
+    width: 100%;
+    margin-bottom: 5.33vw;
+  }
+
+  .post-pregnancy-card h4 {
+    width: 50%;
+    margin-bottom: 4vw!important;
+  }
+  
+  .post-pregnancy-card .select-box h3 {
+    margin-bottom: 2vw;
+    color: black!important;
+  }
+  
+  .post-pregnancy-card .img {
+    position: static;
+  }
+  
+  .post-pregnancy-card .img img {
+    width: 57.33vw;
+  }
+
+  .post-pregnancy-card .select-box select {
+    width: 100%;
   }
 }
