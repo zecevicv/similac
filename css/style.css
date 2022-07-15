@@ -6122,6 +6122,50 @@ body {
   }
 }
 
+/* #Product Table
+================================================== */
+.product-info .table-wrap tbody tr,
+.product-info .table-wrap tbody tr:first-child,
+.product-info .table-wrap tbody tr:nth-child(2n+1) {
+  background-color: white!important;
+}
+
+.product-info .table-wrap tbody tr:nth-child(odd) {
+  background-color: #F1F1F1!important;
+}
+
+.product-info .table-wrap tbody tr:first-child {
+  background-color: white!important;
+}
+
+.product-info .table-wrap table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.product-info th, td {
+  border: 1px solid #E8E8E8;
+  padding: .25vw .5vw;
+}
+
+@media (min-width: 1024px) {
+  .product-info .table-wrap {
+    height: 26.25vw;
+    overflow-y: auto;
+  }
+}
+
+@media (max-width: 1023.98px) {
+  .product-info .table-wrap {
+    width: 100%;
+    overflow-x: auto;
+  }
+
+  .product-info th, td {
+    padding: 1vw 2vw;
+  }
+}
+
 /* #Infant Development
 ================================================== */
 .infant-development {
