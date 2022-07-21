@@ -8552,3 +8552,59 @@ body {
     width: 100%;
   }
 }
+
+/* #Collapsible Wrap
+================================================== */
+.collapsible-wrap .collapsible {
+  padding-left: 1.3vw;
+}
+
+.collapsible-wrap .collapsible:not(:last-child) {
+  border-bottom: 1px solid #D8D8D8;
+}
+
+.collapsible-wrap .collapse-toggler {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.3vw 0;
+}
+
+.collapsible-wrap .collapse-toggler img {
+  width: .6vw;
+  transition: all .4s ease;
+}
+
+.collapsible-wrap .show .collapse-toggler img {
+  transform: rotate(180deg);
+}
+
+.collapsible-wrap .collapse > div {
+  padding-bottom: 1.5vw;
+}
+
+@media (min-width: 1024px) {
+  .collapsible-wrap {
+    height: 26.25vw;
+    overflow-y: auto;
+  }
+}
+
+@media (max-width: 1023.98px) {
+  .collapsible-wrap .collapsible {
+    padding-left: 4vw;
+    padding-right: 4vw;
+  }
+
+  .collapsible-wrap .collapse-toggler {
+    padding: 4vw 0;
+  }
+
+  .collapsible-wrap .collapse-toggler img {
+    width: 4vw;
+  }
+
+  .collapsible-wrap .collapse > div {
+    padding-bottom: 4vw;
+  }
+}
