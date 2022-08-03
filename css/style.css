@@ -569,11 +569,19 @@ body {
     border-bottom: 1px solid #D8D8D8;
   }
   
+  .header-menu-mobile .collapse .collapsible:not(:last-child) {
+    border-bottom: none;
+  }
+  
   .header-menu-mobile .collapse-toggler {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 4vw 0;
+  }
+  
+  .header-menu-mobile .collapse .collapse-toggler {
+    padding: 3vw 0;
   }
   
   .header-menu-mobile .collapse-toggler img {
@@ -585,7 +593,8 @@ body {
   }
   
   .header-menu-mobile .collapse > div {
-    margin-bottom: 9.33vw;
+    margin-top: 1vw;
+    margin-bottom: 3.33vw;
   }
 
   .header-menu-mobile .collapse ul {
@@ -677,6 +686,18 @@ body {
   opacity: 1;
   visibility: visible;
   height: auto!important;
+}
+
+.collapse-input ~ .collapse-label .minus {
+  display: none;
+}
+
+.collapse-input:checked ~ .collapse-label .minus {
+  display: block;
+}
+
+.collapse-input:checked ~ .collapse-label .plus {
+  display: none;
 }
 
 /* #Banner
