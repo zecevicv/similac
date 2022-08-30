@@ -310,6 +310,28 @@ body {
   }
 }
 
+/* #Textarea Primary
+================================================== */
+.textarea-primary {
+  display: inline-block;
+  border: 1px solid #D2D2D2;
+  border-radius: 1.2vw;
+  padding: .5vw 1.3vw;
+  color: black;
+  resize: none;
+}
+
+.textarea-primary::placeholder {
+  color: black;
+}
+
+@media (max-width: 1023.98px) {
+  .textarea-primary {
+    padding: 2.66vw 4.66vw;
+    border-radius: 6vw;
+  }
+}
+
 /* #Header
 ================================================== */
 .header {
@@ -8746,5 +8768,231 @@ body {
   .faq .collapse > div {
     margin-top: -2vw;
     padding-bottom: 5.33vw;
+  }
+}
+
+/* #Contact
+================================================== */
+.contact {
+  padding-bottom: 6.33vw;
+
+  background-image: url('../img/contact/bg.jpg');
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: top;
+}
+
+.contact .breadcrumb {
+  padding: 1vw 4.16vw 2.6vw 4.16vw;
+}
+
+.contact .container {
+  width: 52%;
+}
+
+.contact .heading {
+  text-align: center;
+  margin-bottom: 3vw;
+}
+
+.contact .heading h1 {
+  margin-bottom: .5vw;
+}
+
+.contact .body {
+  border: 3px solid #F1CA69;
+  border-radius: 1vw;
+  padding: 2.6vw 1.5vw 3vw 1.5vw;
+  background-color: white;
+}
+
+.contact .body-heading {
+  text-align: center;
+  margin-bottom: 2vw;
+}
+
+.contact .body-heading h2 {
+  margin-bottom: .5vw;
+}
+
+.contact .input-primary,
+.contact .select-primary,
+.contact .textarea-primary {
+  width: 100%;
+}
+
+.contact form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.contact form > * {
+  flex: 0 0 100%;
+}
+
+.contact form > *:nth-child(1),
+.contact form > *:nth-child(2),
+.contact form > *:nth-child(3),
+.contact form > *:nth-child(4),
+.contact form > *:nth-child(5),
+.contact form > *:nth-child(6),
+.contact form > *:nth-child(7),
+.contact form > *:nth-child(10) {
+  flex: 0 0 15.4vw;
+  margin-bottom: 1.3vw;
+}
+
+.contact form > *:nth-child(8),
+.contact form > *:nth-child(9) {
+  flex: 0 0 7.2vw;
+}
+
+.contact form > *:nth-child(12) {
+  margin-top: .6vw;
+}
+
+.contact form > *:last-child {
+  text-align: center;
+  margin-top: 2.34vw;
+}
+
+.contact .input-select {
+  display: flex;
+  border: 1px solid #D2D2D2;
+  border-radius: 500px;
+  overflow: hidden;
+  padding-right: 1vw;
+  position: relative;
+}
+
+.contact .input-select .input-primary {
+  padding-left: 1vw!important;
+}
+
+.contact .input-select::after {
+  content: '';
+  position: absolute;
+  left: 4.68vw;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 1px;
+  height: 1.5vw;
+  border-right: 1px solid #D2D2D2;
+}
+
+.contact .input-select .input-primary,
+.contact .input-select .select-primary {
+  padding: 0;
+  border: none;
+  border-radius: 0;
+}
+
+.contact .input-select .select-primary {
+  flex: 0 0 4.68vw;
+  padding-right: .78vw;
+  position: relative;
+}
+
+@media (max-width: 1023.98px) {
+  .contact {
+    padding-bottom: 17.33vw;
+    
+    background-image: url('../img/contact/bg-mobile.jpg');
+  }
+  
+  .contact .breadcrumb {
+    padding: 5vw 5.33vw 41.6vw 5.33vw;
+  }
+  
+  .contact .container {
+    width: 90%;
+  }
+  
+  .contact .heading {
+    text-align: center;
+    margin-bottom: 8vw;
+  }
+  
+  .contact .heading h1 {
+    margin-bottom: 3vw;
+  }
+  
+  .contact .body {
+    border: 3px solid #F1CA69;
+    border-radius: 2.66vw;
+    padding: 8vw 5.33vw 10.66vw 5.33vw;
+  }
+  
+  .contact .body-heading {
+    margin-bottom: 5.33vw;
+  }
+  
+  .contact .body-heading h2 {
+    margin-bottom: 2.66vw;
+  }
+  
+  .contact .input-primary,
+  .contact .select-primary,
+  .contact .textarea-primary {
+    width: 100%;
+  }
+  
+  .contact form {
+    display: block;
+  }
+
+  .contact form > *:nth-child(1),
+  .contact form > *:nth-child(2),
+  .contact form > *:nth-child(3),
+  .contact form > *:nth-child(4),
+  .contact form > *:nth-child(5),
+  .contact form > *:nth-child(6),
+  .contact form > *:nth-child(7),
+  .contact form > *:nth-child(8),
+  .contact form > *:nth-child(9),
+  .contact form > *:nth-child(10),
+  .contact form > *:nth-child(11) {
+    margin-bottom: 4vw!important;
+  }
+  
+  .contact form > *:nth-child(12) {
+    margin-top: 3.33vw;
+  }
+  
+  .contact form > *:last-child {
+    text-align: center;
+    margin-top: 8vw;
+  }
+
+  .contact form .btn {
+    width: 100%;
+    justify-content: space-between;
+    padding: 0 5.33vw;
+  }
+  
+  .contact .input-select {
+    padding-right: 4.66vw;
+  }
+
+  .contact .input-select .input-primary {
+    padding-left: 4.66vw!important;
+  }
+  
+  .contact .input-select::after {
+    left: 20vw;
+    height: 6vw;
+  }
+  
+  .contact .input-select .input-primary,
+  .contact .input-select .select-primary {
+    padding: 0;
+    border: none;
+    border-radius: 0;
+  }
+  
+  .contact .input-select .select-primary {
+    flex: 0 0 20vw;
+    padding-right: 3vw;
   }
 }
