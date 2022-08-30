@@ -8629,3 +8629,122 @@ body {
     padding-bottom: 4vw;
   }
 }
+
+/* #FAQ
+================================================== */
+.faq {
+  padding: .5vw 0 4.68vw 0;
+}
+
+.faq .container {
+  width: 52%;
+}
+
+.faq .heading {
+  margin-bottom: 3.125vw;
+}
+
+.faq .heading h1 {
+  margin-bottom: 1vw;
+}
+
+.faq .body h2 {
+  margin-bottom: 1vw;
+}
+
+.faq .accordion:not(:last-child) {
+  margin-bottom: 3.125vw;
+}
+
+.faq .collapsible {
+  padding: 0 1.5vw;
+  box-shadow: 0 3px 24px rgba(0, 0, 0, .1);
+  border-radius: 1vw;
+}
+
+.faq .collapsible:not(:last-child) {
+  margin-bottom: 1vw;
+}
+
+.faq .collapse-toggler {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.3vw 0;
+}
+
+.faq .collapse-toggler img {
+  width: .78vw;
+  transition: all .4s ease;
+}
+
+.faq .show .collapse-toggler img {
+  transform: rotate(180deg);
+}
+
+.faq .collapse > div {
+  padding-bottom: 1.3vw;
+}
+
+@media (min-width: 1024px) {
+  .faq {
+    background-image: url('../img/faq/bg.jpg');
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: top;
+  }
+}
+
+@media (max-width: 1023.98px) {
+  .faq {
+    padding: 6vw 0 17.33vw 0;
+  }
+  
+  .faq .container {
+    width: 90%;
+  }
+  
+  .faq .heading {
+    margin-bottom: 11.33vw;
+  }
+  
+  .faq .heading h1 {
+    margin-bottom: 3vw;
+    line-height: 1.1;
+  }
+
+  .faq .heading p {
+    line-height: 1.27;
+  }
+  
+  .faq .body h2 {
+    margin-bottom: 3vw;
+  }
+  
+  .faq .accordion:not(:last-child) {
+    margin-bottom: 10.66vw;
+  }
+
+  .faq .collapsible {
+    padding-left: 4vw;
+    padding-right: 4vw;
+    border-radius: 2.66vw;
+  }
+
+  .faq .collapsible:not(:last-child) {
+    margin-bottom: 2.66vw;
+  }
+
+  .faq .collapse-toggler {
+    padding: 5.33vw 0;
+  }
+
+  .faq .collapse-toggler img {
+    width: 4vw;
+  }
+
+  .faq .collapse > div {
+    margin-top: -2vw;
+    padding-bottom: 5.33vw;
+  }
+}
